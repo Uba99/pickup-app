@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Penjemputan App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>📋 Jadwal Penjemputan Tamu</h1>
+  <form id="pickupForm">
+    <label>Nama Tamu:</label><br />
+    <input type="text" id="nama" required /><br /><br />
+    <label>Tanggal penjemputan:</label><br />
+    <input type="datetime-local" id="waktu" required /><br /><br />
+    <label>destination:</label><br />
+    <input type="text" id="destination" required /><br /><br />
+    <label>Harga:</label><br />
+    <input type="number" id="harga" required /><br /><br />
+    <label>Kamar:</label><br />
+    <input type="number" id="kamar" required /><br /><br />
+  
+    <button type="submit">Simpan</button>
+  </form>
+
+  <div id="filter">
+    <input type="text" id="filterNama" placeholder="Cari nama..." />
+    <input type="date" id="filterTanggal" />
+  </div>
+  
+  
+  <div id="output"></div>
+  
+  <p>Versi awal siap dikembangkan 🚀</p>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
